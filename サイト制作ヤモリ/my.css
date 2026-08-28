@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+
+}
+
+.yoko {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+}
+
+.yoko img {
+    width: 240px;
+    height: 320px;
+}
+
+
+
+
+.desc1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 72px;
+
+}
+
+.leo-img {
+    width: 320px;
+    height: 400px;
+}
+
+.nishi-img {
+    width: 320px;
+    height: 400px;
+
+}
+
+.oreo-img {
+    width: 320px;
+    height: 400px;
+
+}
+
+.leo-box,
+.nishi-box,
+.oreo-box {
+    transform: translateX(180px);
+    margin-bottom: 130px;
+
+}
+
+.leo-desc,
+.nishi-desc,
+.oreo-desc {
+    font-size: large;
+    text-align: center;
+    transform: translate(50px, -250px);
+    /* X,Y を調整して赤丸へ */
+}
+
+.footer-Gecko {
+    font-weight: 1000;
+    padding: 30px 0;
+    display: block;
+    text-align: center;
+    border-top: 2px solid #999;
+}
+
+/*ここから↓　右から出てくる動きを付ける*/
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: -200px; /* 最初は画面外に隠す   なんで-200？　そう覚えるしかないかも　*/ 
+  width: 200px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+  transition: right 0.3s;
+}
+
+.menu.open {
+  right: 0; /* ボタンを押したら画面に出る */
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  cursor: pointer;
+}
