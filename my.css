@@ -114,3 +114,37 @@ h1 {
   font-size: 30px;
   cursor: pointer;
 }
+
+/* スマホ用レイアウト */
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .menu-btn {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    nav.menu ul {
+        padding: 0;
+    }
+
+    nav.menu ul li a {
+        font-size: 18px;
+        display: block;
+        padding: 10px;
+    }
+
+    /* コンテナがある場合 */
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
