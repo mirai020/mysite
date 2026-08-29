@@ -148,3 +148,44 @@ h1 {
         max-width: 100%;
     }
 }
+
+@media screen and (max-width: 600px) {
+
+    /* 画像をスマホ幅に合わせる */
+    .yoko img,
+    .leo-img,
+    .nishi-img,
+    .oreo-img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* 横並びを縦並びにする */
+    .yoko {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* PC用の位置調整を無効化 */
+    .leo-box,
+    .nishi-box,
+    .oreo-box {
+        transform: none;
+        margin-bottom: 40px;
+    }
+
+    .leo-desc,
+    .nishi-desc,
+    .oreo-desc {
+        transform: none;
+        margin-top: 10px;
+        font-size: 18px;
+    }
+
+    /* コンテナ幅をスマホ用に */
+    .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0 10px;
+    }
+}
